@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     {
         String user=userName.getText().toString();
         String pass=password.getText().toString();
-        long id=DatabaseAdapter.DatabaseHelper.insertData(user,pass);
+        long id=DatabaseAdapter.insertData(user,pass);
         if (id<0)
         {
             Message.message(this,"Unsuccessful");
